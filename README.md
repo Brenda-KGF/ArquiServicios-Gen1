@@ -1,8 +1,17 @@
+# Git url
+https://github.com/Brenda-KGF/ArquiServicios-Gen1
+
 # ArquiServicios-Gen1
 
 Brenda KAren Gomez Flres
+
 INGE-00026-1437-PROGRAMACIÓN WEB
+
 Producto transversal. Entrega parcial
+
+# Abrir rapido
+Abrir Index.html con el navegador, deberia verse asi:
+[Imagen-Prueba-Abrir](/assets/img/BrendaGomez_Dic14-2025_PruebaAbrir.PNG)
 
 # Instrucciones:
 
