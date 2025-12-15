@@ -1,0 +1,84 @@
+proyecto-web/
+│
+├── index.html
+│
+├── pages/
+│   ├── arquitectura.html
+│   ├── lenguaje-marcas.html
+│   ├── css3.html
+│   └── contacto.html   (opcional)
+│
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   │
+│   ├── js/
+│   │   └── main.js
+│   │
+│   ├── img/
+│   │   └── (aquí irán las imágenes del proyecto)
+│   │
+│   └── fonts/
+│
+└── docs/
+    ├── instrucciones_instalacion.txt   (documento 1)
+    └── estructura_proyecto.txt         (documento 2)
+
+
+
+------------------
+
+🧱 1. Carpetas principales
+✔ proyecto-web/
+
+Carpeta raíz. Aquí estará todo el sitio.
+
+✔ index.html
+
+Página principal del sitio, acceso a todas las secciones.
+
+🗂 2. Carpeta /pages
+
+Aquí guardaremos todas las secciones del proyecto.
+
+arquitectura.html → Arquitectura cliente-servidor, evolución del desarrollo web
+
+lenguaje-marcas.html → Etiquetas HTML5 y controles interactivos
+
+css3.html → Reglas CSS3 y animación
+
+contacto.html → Opcional (formulario HTML funcional)
+
+🎨 3. Carpeta /assets
+
+Contendrá recursos del sitio.
+
+📌 /assets/css/
+
+styles.css → Hoja de estilos general
+
+📌 /assets/js/
+
+main.js → Funciones JS del sitio
+
+📌 /assets/img/
+
+Imágenes
+
+Íconos
+
+Diagramas
+
+📌 /assets/fonts/
+
+Fuentes personalizadas (opcional)
+
+📄 4. Carpeta /docs
+
+Contendrá la documentación obligatoria.
+
+instrucciones_instalacion.txt
+
+estructura_proyecto.txt
+
+Después convertiremos estos archivos a PDF.
