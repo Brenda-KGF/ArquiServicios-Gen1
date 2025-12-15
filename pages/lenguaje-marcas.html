@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lenguaje de Marcas</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -27,37 +29,35 @@
 
 <main class="container">
     <h2>Lenguaje de Marcas (HTML5)</h2>
-
     <p>Ejemplos de elementos de control HTML5:</p>
-
     <h3>Formulario de ejemplo</h3>
+    <div class="card">
+        <form>
+            <label>Nombre completo</label>
+            <input type="text" placeholder="Escribe tu nombre">
 
-    <form>
-        <label>Nombre:</label>
-        <input type="text" placeholder="Escribe tu nombre"><br><br>
+            <label>Correo electrónico</label>
+            <input type="email" placeholder="correo@ejemplo.com">
 
-        <label>Correo:</label>
-        <input type="email" placeholder="correo@ejemplo.com"><br><br>
+            <label>Edad</label>
+            <input type="number" min="1" max="100">
 
-        <label>Edad:</label>
-        <input type="number" min="1" max="100"><br><br>
+            <label>País</label>
+            <select>
+                <option>México</option>
+                <option>Colombia</option>
+                <option>Argentina</option>
+            </select>
 
-        <label>Selecciona tu país:</label>
-        <select>
-            <option>México</option>
-            <option>Colombia</option>
-            <option>Argentina</option>
-        </select><br><br>
+            <label>Comentarios</label>
+            <textarea rows="4"></textarea>
 
-        <label>Comentarios:</label><br>
-        <textarea rows="4"></textarea><br><br>
-
-        <button type="submit">Enviar</button>
-    </form>
-
+            <button>Enviar</button>
+        </form>
+    </div>
     
     <p></p>
-    <a class="btn" href="css3.html">CSS3</a>
+    <a class="btn" href="css3.html">Ir a CSS3</a>
 
 </main>
 

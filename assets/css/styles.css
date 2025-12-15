@@ -1,4 +1,6 @@
-/* -------- ESTILOS BASE -------- */
+/* ------------------------
+   ESTILOS BASE GENERALES
+-------------------------*/
 
 * {
     margin: 0;
@@ -7,31 +9,40 @@
 }
 
 body {
-    font-family: "Arial", sans-serif;
-    background: #f4f4f4;
+    font-family: "Inter", Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
     line-height: 1.6;
 }
 
-h1, h2, h3 {
-    font-weight: bold;
-}
-
+/* Contenedor general */
 .container {
-    width: 90%;
+    width: 92%;
+    max-width: 1100px;
     margin: auto;
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
-/* -------- NAVBAR -------- */
+/* Tipografías de títulos */
+h1, h2, h3 {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* ------------------------
+       NAVBAR
+-------------------------*/
 
 header {
-    background: #222;
+    background: #1a1a1a;
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
 .navbar {
-    width: 90%;
+    width: 92%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -39,33 +50,37 @@ header {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 26px;
+    font-weight: 700;
 }
 
+/* Lista de navegación */
 .nav-links {
     list-style: none;
 }
 
 .nav-links li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    padding: 8px 10px;
+    padding: 6px 10px;
+    transition: 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links .active {
-    background: #008cff;
-    border-radius: 4px;
+    background: #0d6efd;
+    border-radius: 5px;
 }
 
-/* -------- MENU RESPONSIVE -------- */
+/* ------------------------
+   MENÚ RESPONSIVE
+-------------------------*/
 
 .menu-btn {
     display: none;
@@ -73,18 +88,21 @@ header {
     cursor: pointer;
 }
 
-/* Modo responsive */
 @media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
 
     .nav-links {
         position: absolute;
-        right: -200px;
-        top: 60px;
-        background: #222;
-        width: 180px;
+        top: 70px;
+        right: -260px;
+        background: #1a1a1a;
+        width: 220px;
         padding: 20px;
+        border-radius: 8px;
         transition: right 0.4s ease;
-        border-radius: 6px;
     }
 
     .nav-links li {
@@ -92,57 +110,120 @@ header {
         margin: 15px 0;
     }
 
-    .menu-btn {
-        display: block;
-        color: white;
-    }
-
     .nav-open {
-        right: 0 !important;
+        right: 10px !important;
     }
 }
 
-/* -------- BOTONES -------- */
+/* ------------------------
+        BOTONES
+-------------------------*/
 
 .btn {
-    padding: 12px 18px;
     display: inline-block;
-    background: #008cff;
+    padding: 12px 20px;
+    background: #0d6efd;
     color: white;
     border-radius: 6px;
     text-decoration: none;
-    transition: background 0.3s ease;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-    background: #006bcc;
+    background: #0b5ed7;
 }
 
-/* -------- FOOTER -------- */
+/* ------------------------
+        FORMULARIOS
+-------------------------*/
 
-footer {
-    background: #222;
+form label {
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 8px 0 18px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    background: #0d6efd;
     color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 40px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-/* -------- ANIMACIÓN -------- */
+button:hover {
+    background: #0b5ed7;
+}
+
+/* ------------------------
+          IMÁGENES
+-------------------------*/
+
+.img-responsive {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* ------------------------
+       TARJETAS (Cards)
+-------------------------*/
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.10);
+}
+
+/* ------------------------
+       ANIMACIONES CSS
+-------------------------*/
 
 .caja-animada {
-    width: 150px;
-    height: 150px;
-    background: #008cff;
+    width: 160px;
+    height: 160px;
+    background: #0d6efd;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: mover 3s infinite alternate;
-    border-radius: 10px;
+    border-radius: 12px;
+    font-size: 18px;
+    animation: desplazamiento 3s infinite alternate ease-in-out;
 }
 
-@keyframes mover {
-    from { transform: translateX(0); }
-    to { transform: translateX(200px); }
+@keyframes desplazamiento {
+    from {
+        transform: translateX(0);
+        background: #0d6efd;
+    }
+    to {
+        transform: translateX(220px);
+        background: #6610f2;
+    }
+}
+
+/* ------------------------
+        FOOTER
+-------------------------*/
+
+footer {
+    background: #1a1a1a;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
 }
