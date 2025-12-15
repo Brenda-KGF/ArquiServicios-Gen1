@@ -11,14 +11,19 @@
 <header>
     <nav class="navbar">
         <h1 class="logo">Proyecto Web</h1>
-        <ul class="nav-links">
+
+        <span class="menu-btn" onclick="toggleMenu()">☰</span>
+
+        <ul class="nav-links" id="navLinks">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="arquitectura.html">Arquitectura</a></li>
-            <li><a href="lenguaje-marcas.html" class="active">Lenguaje de Marcas</a></li>
+            <li><a href="lenguaje-marcas.html">Lenguaje de Marcas</a></li>
             <li><a href="css3.html">CSS3</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 </header>
+
 
 <main class="container">
     <h2>Lenguaje de Marcas (HTML5)</h2>
@@ -60,5 +65,6 @@
     <p>© 2025 Mi Proyecto Web</p>
 </footer>
 
+<script src="../assets/js/main.js"></script>
 </body>
 </html>

@@ -1,47 +1,134 @@
-body {
-    font-family: Arial, sans-serif;
+/* -------- ESTILOS BASE -------- */
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
     background: #f4f4f4;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* -------- NAVBAR -------- */
+
+header {
+    background: #222;
+    color: white;
+    padding: 10px 0;
 }
 
 .navbar {
+    width: 90%;
+    margin: auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 15px;
-    background: #222;
-    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
 }
 
 .nav-links li {
-    display: inline;
-    margin-right: 15px;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    padding: 8px 10px;
 }
 
-.container {
-    padding: 20px;
+.nav-links a:hover,
+.nav-links .active {
+    background: #008cff;
+    border-radius: 4px;
 }
+
+/* -------- MENU RESPONSIVE -------- */
+
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Modo responsive */
+@media (max-width: 768px) {
+
+    .nav-links {
+        position: absolute;
+        right: -200px;
+        top: 60px;
+        background: #222;
+        width: 180px;
+        padding: 20px;
+        transition: right 0.4s ease;
+        border-radius: 6px;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .menu-btn {
+        display: block;
+        color: white;
+    }
+
+    .nav-open {
+        right: 0 !important;
+    }
+}
+
+/* -------- BOTONES -------- */
 
 .btn {
-    padding: 10px 20px;
+    padding: 12px 18px;
+    display: inline-block;
     background: #008cff;
     color: white;
-    border-radius: 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
 }
+
+.btn:hover {
+    background: #006bcc;
+}
+
+/* -------- FOOTER -------- */
 
 footer {
     background: #222;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 10px;
+    margin-top: 40px;
 }
 
-/* --- Animación CSS3 --- */
+/* -------- ANIMACIÓN -------- */
 
 .caja-animada {
     width: 150px;
@@ -52,6 +139,7 @@ footer {
     justify-content: center;
     align-items: center;
     animation: mover 3s infinite alternate;
+    border-radius: 10px;
 }
 
 @keyframes mover {
