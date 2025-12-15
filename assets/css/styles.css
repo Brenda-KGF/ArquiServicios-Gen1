@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #008cff;
+    color: white;
+    border-radius: 5px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* --- Animación CSS3 --- */
+
+.caja-animada {
+    width: 150px;
+    height: 150px;
+    background: #008cff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: mover 3s infinite alternate;
+}
+
+@keyframes mover {
+    from { transform: translateX(0); }
+    to { transform: translateX(200px); }
+}
