@@ -1,0 +1,59 @@
+INSTRUCCIONES PARA EJECUTAR EL PROYECTO LOCALMENTE
+📌 1. Requisitos previos
+
+Para ejecutar el proyecto correctamente, necesitas instalar un servidor web local.
+Cualquiera de estas opciones funciona:
+
+XAMPP (recomendado)
+
+WAMP
+
+Laragon
+
+MAMP (Mac)
+
+📌 2. Instalación del servidor
+
+XAMPP (Windows / Mac / Linux)
+
+Descargar desde: https://www.apachefriends.org
+
+Instalar y ejecutar el panel de control
+
+Activar el servicio Apache
+
+📌 3. Colocar el proyecto en la carpeta del servidor
+
+Copia la carpeta completa del proyecto (por ejemplo: proyecto-web/) dentro de:
+
+C:\xampp\htdocs\
+
+
+En Mac:
+
+/Applications/XAMPP/htdocs/
+
+
+En Linux:
+
+/opt/lampp/htdocs/
+
+📌 4. Ejecutar el sitio web
+
+Abrir tu navegador y escribir:
+
+http://localhost/proyecto-web/
+
+📌 5. Dependencias externas
+
+El proyecto utiliza:
+
+Google Fonts (carga automática por CDN)
+
+Animaciones CSS3 (no requiere instalación)
+
+JavaScript puro, sin librerías externas
+
+No requiere base de datos, ni PHP especial
+
+No se necesita ninguna configuración adicional.

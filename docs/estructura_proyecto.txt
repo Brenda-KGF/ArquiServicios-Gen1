@@ -1,84 +1,91 @@
+
+
+ESTRUCTURA DEL PROYECTO
+
+La estructura del sitio es la siguiente:
+
 proyecto-web/
 │
-├── index.html
+├── index.html                     → Página principal
 │
 ├── pages/
-│   ├── arquitectura.html
-│   ├── lenguaje-marcas.html
-│   ├── css3.html
-│   └── contacto.html   (opcional)
+│     ├── arquitectura.html        → Arquitectura Cliente-Servidor
+│     ├── lenguaje-marcas.html     → Ejemplos HTML5
+│     ├── css3.html                → Reglas de CSS3 y animaciones
 │
 ├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   │
-│   ├── js/
-│   │   └── main.js
-│   │
-│   ├── img/
-│   │   └── (aquí irán las imágenes del proyecto)
-│   │
-│   └── fonts/
+│     ├── css/
+│     │     └── styles.css         → Estilos generales
+│     │
+│     ├── js/
+│     │     └── main.js            → Funcionalidades interactivas
+│     │
+│     └── img/                     → Imágenes del proyecto
 │
 └── docs/
-    ├── instrucciones_instalacion.txt   (documento 1)
-    └── estructura_proyecto.txt         (documento 2)
+      ├── instrucciones_instalacion.md
+      └── estructura_proyecto.md
 
+DESCRIPCIÓN DE CADA SECCIÓN
+★ 1. Página de inicio (index.html)
 
+Contiene:
 
-------------------
+Encabezado principal
 
-🧱 1. Carpetas principales
-✔ proyecto-web/
+Barra de navegación
 
-Carpeta raíz. Aquí estará todo el sitio.
+Presentación del sitio
 
-✔ index.html
+Botones de acceso a las demás secciones
 
-Página principal del sitio, acceso a todas las secciones.
+Pie de página
 
-🗂 2. Carpeta /pages
+★ 2. Arquitectura de Servicios (arquitectura.html)
 
-Aquí guardaremos todas las secciones del proyecto.
+Explica:
 
-arquitectura.html → Arquitectura cliente-servidor, evolución del desarrollo web
+Qué es la arquitectura cliente-servidor
 
-lenguaje-marcas.html → Etiquetas HTML5 y controles interactivos
+Cómo funciona la comunicación entre navegador y servidor
 
-css3.html → Reglas CSS3 y animación
+Recursos gráficos que ilustran el proceso
 
-contacto.html → Opcional (formulario HTML funcional)
+★ 3. Lenguaje de Marcas HTML5 (lenguaje-marcas.html)
 
-🎨 3. Carpeta /assets
+Incluye:
 
-Contendrá recursos del sitio.
+Ejemplos de etiquetas HTML5
 
-📌 /assets/css/
+5 elementos de control funcionando:
+✔ input
+✔ select
+✔ textarea
+✔ button
+✔ checkbox / radio
 
-styles.css → Hoja de estilos general
+Demostración práctica del uso de etiquetas semánticas
 
-📌 /assets/js/
+★ 4. CSS3 y Animaciones (css3.html)
 
-main.js → Funciones JS del sitio
+Incluye:
 
-📌 /assets/img/
+Reglas CSS3 aplicadas a elementos HTML
 
-Imágenes
+Ejemplo de animación CSS3
 
-Íconos
+Uso de clases reutilizables
 
-Diagramas
+Uso de variables, sombras, bordes redondeados, transiciones
 
-📌 /assets/fonts/
+RELACIÓN ENTRE LAS SECCIONES
 
-Fuentes personalizadas (opcional)
+Todas las páginas comparten:
+✔ Una barra de navegación
+✔ Una estructura semántica coherente
+✔ Mismo archivo CSS
+✔ Mismo script JS
 
-📄 4. Carpeta /docs
+La navegación crea una arquitectura clara tipo:
 
-Contendrá la documentación obligatoria.
-
-instrucciones_instalacion.txt
-
-estructura_proyecto.txt
-
-Después convertiremos estos archivos a PDF.
+Inicio → Arquitectura → Lenguaje de Marcas → CSS3 → Regresar a Inicio
